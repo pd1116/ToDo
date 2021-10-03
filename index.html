@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>ToDo APP</h1>
+        <div class="Input-section">
+            <input class="input-text" type="text"></input>
+            <button class="btn "><i class="active fas fa-plus"></i></button>
+        </div>
+        <div class="List">
+            <ul class="TODOList">
+                <!-- Data from LocalStorage -->
+            </ul>
+        </div>
+        <footer class="Foo">
+            <p> You have <span class="pending"></span> items in total. </p>
+            <button class="Clear" onclick="ClearAll();">Clear All</button>
+        </footer>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>

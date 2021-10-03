@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: crimson;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    margin: 120px auto;
+    max-width: 700px;
+    background-color: #FFF;
+    padding: 30px 30px;
+}
+
+.wrapper h1 {
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+}
+
+.Input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Input-section input {
+    width: 300px;
+    font-size: 18px;
+    padding: 20px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.Input-section button {
+    background-color: crimson;
+    opacity: 0.6;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-weight: 900;
+    font-size: 28px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.Input-section button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.List li {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: #262626;
+    text-align: center;
+    width: 50%;
+    font-size: 18px;
+    margin: 40px 120px;
+    color: #FFF;
+    padding: 10px;
+}
+
+.List li button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.List li i {
+    color: red;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p, footer button {
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+footer button {
+    padding: 10px;
+    background-color: crimson;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media(max-width:576px) {
+    .List li {
+        width: 70%;
+        margin: 20px 20px;
+    }
+    footer p, footer button {
+        font-size: 18px;
+        margin: 10px auto;
+    }
+}
